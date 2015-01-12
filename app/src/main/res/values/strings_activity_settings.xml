@@ -1,0 +1,28 @@
+<resources>
+    <!-- Strings related to Settings -->
+
+    <string name="title_activity_settings">Settings</string>
+
+    <string name="pref_run_count_key">run_count</string>
+
+    <string name="pref_header_general">General</string>
+
+    <string name="pref_header_feed_item">Feed Items</string>
+
+    <string name="pref_item_jscript_key">item_jscript</string>
+    <string name="pref_item_jscript_title">Allow JavaScript</string>
+    <string name="pref_item_jscript_description">Enable JavaScript support content plugins in item viewer</string>
+
+    <string name="pref_item_storage_key">item_storage</string>
+    <string name="pref_item_storage_title">Allow LocalStorage</string>
+    <string name="pref_item_storage_description">Enable DOM storage caching in item viewer</string>
+
+    <string name="pref_item_zoom_key">item_zoom</string>
+    <string name="pref_item_zoom_title">Show Zoom Buttons</string>
+    <string name="pref_item_zoom_description">Enable zoom controls in item viewer</string>
+
+    <string name="pref_item_scale_key">item_scale</string>
+    <string name="pref_item_scale_title">Scale Content</string>
+    <string name="pref_item_scale_description">Scale width of item viewer content (images, etc.)</string>
+
+</resources>

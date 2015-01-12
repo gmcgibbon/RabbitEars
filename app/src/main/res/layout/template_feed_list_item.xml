@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:id="@+id/feed_title_block"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/feed_image"
+            android:src="@drawable/ic_feed"
+            android:minHeight="50dp"
+            android:minWidth="50dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+        <ProgressBar
+            android:id="@+id/feed_progress"
+            android:visibility="invisible"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+        <TextView
+            android:id="@+id/feed_title"
+            android:text="Feed Title"
+            android:textSize="30sp"
+            android:padding="10sp"
+            android:layout_toRightOf="@id/feed_image"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/feed_description"
+        android:text="Feed Description text text text text text "
+        android:maxLines="2"
+        android:layout_below="@id/feed_title_block"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+    <TextView
+        android:id="@+id/feed_link"
+        android:text="http://www.example.com/"
+        android:autoLink="web"
+        android:layout_below="@id/feed_description"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+</RelativeLayout>

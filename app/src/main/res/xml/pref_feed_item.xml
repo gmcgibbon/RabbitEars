@@ -1,0 +1,31 @@
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <!-- Remove when other frags used -->
+    <PreferenceCategory
+        android:title="@string/pref_header_feed_item" />
+
+    <SwitchPreference
+        android:key="@string/pref_item_jscript_key"
+        android:title="@string/pref_item_jscript_title"
+        android:contentDescription="@string/pref_item_jscript_description"
+        android:defaultValue="true" />
+
+    <SwitchPreference
+        android:key="@string/pref_item_storage_key"
+        android:title="@string/pref_item_storage_title"
+        android:contentDescription="@string/pref_item_storage_description"
+        android:defaultValue="true" />
+
+    <SwitchPreference
+        android:key="@string/pref_item_zoom_key"
+        android:title="@string/pref_item_zoom_title"
+        android:contentDescription="@string/pref_item_zoom_description"
+        android:defaultValue="false" />
+
+    <SwitchPreference
+        android:key="@string/pref_item_scale_key"
+        android:title="@string/pref_item_scale_title"
+        android:contentDescription="@string/pref_item_scale_description"
+        android:defaultValue="false" />
+
+</PreferenceScreen>

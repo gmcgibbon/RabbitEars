@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Rabbit Ears</string>
+    <string name="action_settings">Settings</string>
+
+    <string name="display_date_format">MMM dd, yyyy h:mm a</string>
+
+    <string-array name="markup_date_formats">
+        <item>EEE, dd MMM yyyy HH:mm:ss z</item>
+        <item>EEE, dd MMM yyyy HH:mm:ss Z</item>
+        <item>EEE, d MMM yyyy HH:mm:ss \'Z\'</item>
+        <item>yyyy-MM-dd\'T\'HH:mm:ss\'Z\'</item>
+        <item>yyyy-MM-dd\'T\'HH:mm:ssZ</item>
+        <item>yyyy-MM-dd\'T\'HH:mm:ssXXX</item>
+    </string-array>
+
+    <string name="add_feed_title">Add Feed</string>
+    <string name="add_feed_tag">AddFeedDialog</string>
+    <string name="feed_options_tag">FeedOptions</string>
+
+    <string name="item_save">Save</string>
+    <string name="item_delete">Delete</string>
+
+    <string name="media_stream">Stream</string>
+    <string name="media_download">Download</string>
+
+    <string name="media_queued">Download started!</string>
+
+    <string name="media_play">Play</string>
+    <string name="media_pause">Pause</string>
+    <string name="media_stop">Stop</string>
+
+    <string name="image_download_title">Downloading Feed Image</string>
+    <string name="image_download_message">One moment please...</string>
+
+    <string name="title_activity_feed_item_lister">Feed Item Lister</string>
+    <string name="title_activity_item_viewer">Item Viewer</string>
+    <string name="title_activity_media_streamer">Media Streamer</string>
+
+    <string name="action_new">New</string>
+    <string name="action_remove">Remove</string>
+    <string name="action_clear">Clear</string>
+
+    <string name="clear_message">Clear all feeds and saved feed items?</string>
+
+    <string name="first_message">Thanks for trying Rabbit Ears!\n\nSelecting \"New\" from the action bar allows you to add a new RSS/Atom feed via URL. Tapping an added feed from the main list will process feed items. Feed item media files may be downloaded or streamed.</string>
+
+    <string name="option_ok">OK</string>
+    <string name="option_yes">Yes</string>
+    <string name="option_no">No</string>
+
+    <string name="feed_url_add_button">Add</string>
+    <string name="feed_url_paste_button">Paste</string>
+    <string name="feed_url_cancel_button">Cancel</string>
+
+    <string name="feed_url_exists">Feed already exists!</string>
+    <string name="feed_url_added">%s added!</string>
+    <string name="feed_url_error_read">Data could not be read, feed appears to be incompatible with RabbitEars!</string>
+    <string name="feed_url_error_xml">Feed resource must be in XML format!</string>
+    <string name="feed_url_error_url">Feed address is not in correct format!</string>
+
+</resources>

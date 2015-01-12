@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:versionCode="100"
+    android:versionName="1.0 Pilot"
+    package="com.fbs.rabbitears" >
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+
+    <application
+        android:name="com.fbs.rabbitears.RabbitEars"
+        android:hardwareAccelerated="true"
+        android:allowBackup="true"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/Theme.Default" >
+        <meta-data
+            android:name="AA_MODELS"
+            android:value="com.fbs.rabbitears.models.Feed,
+                           com.fbs.rabbitears.models.FeedItem,
+                           com.fbs.rabbitears.models.ItemMedia" />
+        <meta-data
+            android:name="AA_DB_NAME"
+            android:value="RabbitEars.db" />
+        <meta-data
+            android:name="AA_DB_VERSION"
+            android:value="1" />
+
+        <activity
+            android:name="com.fbs.rabbitears.activities.FeedLister"
+            android:label="@string/app_name"
+            android:launchMode="singleTop"
+            android:configChanges="orientation|screenSize" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.fbs.rabbitears.activities.ItemLister"
+            android:label="@string/title_activity_feed_item_lister"
+            android:launchMode="singleTop"
+            android:configChanges="orientation|screenSize"
+            android:parentActivityName="com.fbs.rabbitears.activities.FeedLister" >
+        </activity>
+        <activity
+            android:name="com.fbs.rabbitears.activities.ItemViewer"
+            android:label="@string/title_activity_item_viewer"
+            android:launchMode="singleTop"
+            android:parentActivityName="com.fbs.rabbitears.activities.ItemLister" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.fbs.rabbitears.activities.ItemLister" />
+        </activity>
+        <activity
+            android:name=".activities.ItemStreamer"
+            android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|uiMode|screenSize|smallestScreenSize"
+            android:windowSoftInputMode="adjustPan"
+            android:label="@string/title_activity_media_streamer"
+            android:launchMode="singleTop"
+            android:parentActivityName="com.fbs.rabbitears.activities.ItemViewer" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.fbs.rabbitears.activities.ItemViewer" />
+        </activity>
+        <activity
+            android:name="com.fbs.rabbitears.activities.Settings"
+            android:label="@string/title_activity_settings"
+            android:parentActivityName="com.fbs.rabbitears.activities.FeedLister" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.fbs.rabbitears.activities.FeedLister" />
+        </activity>
+    </application>
+
+</manifest>
